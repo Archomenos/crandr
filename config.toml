@@ -1,0 +1,11 @@
+[hs]
+displays = {"DP1" = "1680x1050", "DP3" = "1920x1080"}
+command = "xrandr --output DP1 --primary --mode 1680x1050 --pos 1920x0 --rotate normal --output DP3 --mode 1920x1080 --pos 0x0 --rotate normal"
+
+[home]
+displays = {"eDP1" = "1920x1080", "DP1-3" = "2560x1440", "DP1-2" = "2560x1440"}
+command = "xrandr --output eDP1 --off --output DP1 --off --output DP1-1 --off --output DP1-2 --primary --mode 2560x1440 --pos 2560x0 --rotate normal --output DP1-3 --off --output DP2 --off --output DP3 --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off"
+
+[work]
+displays = { "eDP1" = "1920x1080", "DP1-1" = "1920x1200", "DP1-2" = "1920x1200" }
+command = "xrandr --output eDP1 --mode 1920x1080 --pos 3840x0 --output DP1-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output DP1-2 --mode 1920x1200 --pos 1920x0 --rotate normal"
